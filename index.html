@@ -12,19 +12,52 @@
 </head>
 
 <body>
-    <h1><span id="p1Score">0</span> To <span id="p2Score">0</span></h1>
-    <label for="goals">Choose a goal:</label>
-    <select name="" id="goal">
-        <option value="2">2</option>
-        <option value="4">4</option>
-        <option value="6">6</option>
-        <option value="8">8</option>
-    </select>
-    <button id="p1Button">+1 Player 1</button>
-    <button id="p2Button">+1 Player 2</button>
-    <button id="reset">Reset</button>
+    <section class="section is-large">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by2 ">
+                            <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80" alt="">
+                        </figure>
+                    </div>
+                    <header class="card-header is-1">
+                        <p class="card-header-title">
+                            Score Keeper
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1"><span id="p1Score">0</span> To <span id="p2Score">0</span></h1>
+                            <p class="subtitle">Use the buttons to keep your score!</p>
+                            <label for="goal" class="label is-inline is-large">Playing to Score: </label>
 
-    <script src="app.js"></script>
+                            <div class="select is-rounded">
+                                <select name="" id="goal">
+                                    <option value="2">2</option>
+                                    <option value="4">4</option>
+                                    <option value="6">6</option>
+                                    <option value="8">8</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1Button" class="button is-large is-link  button card-footer-item">+1 Player
+                            1</button>
+                        <button id="p2Button" class="button is-large is-primary button card-footer-item">+1 Player
+                            2</button>
+                        <button id="reset" class="button is-large is-danger button card-footer-item">Reset</button>
+                    </footer>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+        <script src="app.js"></script>
 </body>
 
 </html>
