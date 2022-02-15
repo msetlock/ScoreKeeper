@@ -22,6 +22,8 @@ p1Btn.addEventListener('click', function () {
             gameOver = true;
             p1Score.classList.add("has-text-success")
             p2Score.classList.add("has-text-danger")
+            p1Btn.disabled=true;
+            p2Btn.disabled=true;
 
 
         }
@@ -37,6 +39,9 @@ p2Btn.addEventListener('click', function () {
             gameOver = true;
             p2Score.classList.add("has-text-success")
             p1Score.classList.add("has-text-danger")
+            p1Btn.disabled=true;
+            p2Btn.disabled=true;
+
 
         }
         p2Score.textContent = p2P;
@@ -55,5 +60,6 @@ function res() {
     "has-text-danger")
     p2Score.classList.remove("has-text-success"
     ,"has-text-danger")
-
+    p1Btn.disabled=false;
+            p2Btn.disabled=false;
 }
